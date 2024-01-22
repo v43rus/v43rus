@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sök jobbet som biovärd idag i In-Codenito kommun">
+    <!-- Defines meta description of page -->
+    <meta name="keywords" content="Biovärd, lediga jobb"> <!-- Defines meta keywords of page -->
+    <meta name="author" content="In-Codenito"> <!-- Defines the author of page -->
+    <link rel="icon" type="image/ico" href="Images/favicon.ico" sizes="16x16">
+    <title>Biovärd - Incodenito Kommun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerTopContainer">
+            <a id="logoLink" href="index.html"><img alt="Logo" id="logo" src="Images/logotype.png"></a>
+            <div id="searchBar">
+                <input type="text" placeholder="Sök...">
+                <a href=""><img alt="Sök" class="inlineIcon" src="icons/searchicon.png"></a>
+            </div>
+        </div>
+
+        <nav>
+            <a href=" ledigajobb.html">Lediga Jobb</a>
+            <a href="naringsliv.html">Näringsliv</a>
+            <a href="kulturochfritid.html">Kultur &amp; Fritid</a>
+            <a href="barnochutbildning.html">Barn &amp; Utbildning</a>
+            <a href="kommunochpolitik.html">Kommun &amp; Politik</a>
+            <a id="lyssnaLink" class="inlineImgLink" href=""><img class="inlineIcon" alt="Lyssna" id="earIcon"
+                    src="icons/earicon.png">Lyssna</a>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="navOverview">
+            <ul>
+                <li class="inlineImgLink"><img class="inlineIcon" src="icons/homeicon.png"><a
+                        href="index.html">Startsida</a></li>
+                <li>/</li>
+                <li><a href="ledigajobb.html">Lediga jobb</a></li>
+                <li>/</li>
+                <li>Biovärd</li>
+            </ul>
+        </nav>
+
+        <div id="job-info-flex-container"> <!--Flex container for the content parts of the page-->
+            <article id="job-article"> <!--Information about the job-->
+                <img src="Images/ledigajobb-biovärd hel.jpg" alt="En biovärd i tjänst" style="max-width: 500px;">
+                <h1>Biovärd - ett jobb för dig som gillar kundservice</h1>
+                <p>
+                    Vi söker en vänlig och serviceinriktad biovärd för att skapa en välkomnande och minnesvärd
+                    upplevelse
+                    för stadens biobesökare. Som biovärd kommer du att vara ansiktet utåt för vår biograf och se till
+                    att våra
+                    gäster trivs och har en smidig och trevlig upplevelse från början till slut.
+                </p>
+                <p>
+                    Dina arbetsuppgifter kommer bland annat vara att:
+                <ul class="job-article-list">
+                    <li>Möta besökare vid biljettkassan eller biljettkontrollen</li>
+                    <li>Se till så att biografen är ren och städad inför varje föreställning</li>
+                    <li>Säkerställa att säkerhets- och nödåtgärder följs</li>
+                    <li>Ge information om filmerna till besökarna</li>
+                </ul>
+                </p>
+            </article>
+
+            <aside id="job-qualifications"> <!--Qualifications listed-->
+                <h2>Kvalifikationer</h2>
+                <h3>Utbildning & efarenhet:</h3>
+                <ul class="job-article-list">
+                    <li>Gymnasieutbildning eller motsvarande</li>
+                    <li>Tidigare yrkesefarenhet inom kunservice</li>
+                </ul>
+                <h3>Personliga egenskaper:</h3>
+                <ul class="job-article-list">
+                    <li>Känsla för kundservice och kundmöten</li>
+                    <li>Förmåga att arbeta i periodvis stressig arbetsmiljö</li>
+                    <li>Intresse och kunskap om film</li>
+
+                </ul>
+            </aside>
+        </div>
+
+        <a href="ledigajobb.html#application-form" class="job-button"><b class="text-in-job-button">ANSÖK NU</b></a>
+        <br>
+
+    </main>
+
+    <footer>
+        <div>
+            <p class="footerHeading">Kontakt</p>
+            <ul>
+                <li class="footerSubHeading">Postaddress</li>
+                <li>Incodenito Kommun</li>
+                <li>103 16 Incodenito</li>
+            </ul>
+            <ul>
+                <li>Organisationsnummer:</li>
+                <li>212 000-4444</li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Ring" src="icons/phoneicon.png"><a
+                        class="footerLinks" href="tel:XXXXXXXXXX">+46789456123</a></li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Maila" src="icons/mailicon.png"> <a
+                        class="footerLinks" href="mailto:system@incodenitokommun.se">Skicka
+                        mejl</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <p class="footerHeading">Sociala Medier</p>
+                </li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Facebook"
+                            src="icons/facebookicon.png">Facebook</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Instagram"
+                            src="icons/instagramicon.png">Instagram</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="LinkedIn"
+                            src="icons/linkedinicon.png">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <!--Skrolla upp till toppen knapp-->
+        <button type="button" onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!---->
+    </footer>
+</body>

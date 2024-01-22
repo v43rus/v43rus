@@ -1,0 +1,417 @@
+/* COLORS FOR WEBSITE */
+:root {
+    --primary-color: #CBBD98;
+    --secondary-color: #8B8852;
+    --accent-color: #A44040;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    --link-color: #4339d5;
+}
+
+/* CONTAINER FOR MAIN CONTENT */
+#KF {
+    max-width: 100%;
+    font-family: poppins, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+/* LINKS INSIDE MAIN CONTENT */
+#KF a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .3s;
+}
+
+/* LINKS INSIDE MAIN CONTENT WHEN CLICKED ON */
+#KF a:active {
+    animation: flash .5s infinite;
+}
+
+/* HORIZONTAL RULE IN MAIN CONTENT */
+#KF hr {
+    background-color: var(--accent-color);
+    height: .3vh;
+    width: 85%;
+}
+
+/* BOTTOM OF PAGE OF SECTION "KOMMUNEN TIPSAR" */
+#KF #KF-synlighet {
+    font-size: 1rem;
+    line-height: 3vh;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* FOR THE CONTAINER OF SECTIONS */
+.KF-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* EVERY H2 IN THE SECTION */
+.KF-container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+/* EVERY FIGURE IN THE SECTION */
+.KF-container figure {
+    margin: 0;
+}
+
+/* EVERY IMG IN THE SECTION */
+.KF-container img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(70%);
+    border-top: .6vh solid var(--secondary-color);
+}
+
+/* EVERY H3 IN THE SECTION */
+.KF-container h3 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 3vh;
+}
+
+/* EVERY P IN THE SECTION */
+.KF-container p {
+    font-size: 1rem;
+    line-height: 3vh;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* FOR THE DOWNLOAD LINKS IN SECTION "MOTION I KOMMUNEN" */
+.KF-container .download {
+    display: block;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* WHEN HOVERING LINKS IN THE SECTION */
+.KF-container a:hover {
+    text-decoration: underline;
+}
+
+/* FOR THE IMAGES INSIDE SECTION "KOMMANDE AKTIVITETER" */
+.KF-container .motion,
+.KF-container .tips {
+    filter: grayscale(40%);
+}
+
+/* BORDER FOR THE DETAILS CONTAINER */
+details {
+    border-left: .5vh solid var(--accent-color);
+}
+
+/* FOR THE SUMMARY (SUMMARY IS HEADINGS FOR DETAILS) */
+summary {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    outline: none;
+    padding-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* CHANGES THE COLOR OF THE MARKER NEXT TO THE SUMMARY */
+summary::marker {
+    color: var(--secondary-color);
+}
+
+/* FOR THE BOOKING FORM CONTAINER */
+#booking-form {
+    width: 100%;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOR THE CONTENT OF THE BOOKING FORM */
+label,
+.input-field::placeholder,
+textarea::placeholder,
+.input-field:focus,
+textarea:focus,
+#booking-button {
+    font-size: 1rem;
+    font-family: poppins, sans-serif;
+    color: var(--text-color);
+}
+
+/* FOR THE LABEL IN THE BOOKING FORM */
+label {
+    padding: .6rem 0;
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+
+}
+
+/* FOR THE ICONS IN THE BOOKING FORM */
+.icon {
+    padding-right: .5rem;
+}
+
+/* FOR THE INPUT FIELDS OF BOOKING FORM */
+.input-field {
+    width: 100%;
+    padding: .6rem 0;
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+
+/* FOR THE INPUT FIELDS WHEN CLICKED ON */
+.input-field:focus {
+    border: 2px solid var(--secondary-color);
+}
+
+/* FOR THE PLACEHOLDER INSIDE THE INPUT FIELD */
+.input-field::placeholder {
+    padding-left: 1rem;
+}
+
+/* FOR THE PLACEHOLDER INSIDE THE TEXTAREA */
+textarea::placeholder {
+    padding-left: 1rem;
+    padding-top: .5rem;
+}
+
+.input-field:focus::placeholder,
+textarea:focus::placeholder {
+    /* FOR THE PLACEHOLDER WHEN CLICKED ON */
+    color: transparent;
+}
+
+/* FOR THE TEXTAREA INSIDE THE BOOKING FORM */
+textarea {
+    resize: none;
+    width: 100%;
+    height: 3.5rem;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    box-sizing: content-box;
+    padding: 0;
+}
+
+/* FOR THE TEXTAREA WHEN CLICKED ON */
+textarea:focus {
+    border: 2px solid var(--secondary-color);
+}
+
+/* FOR THE BOOKING BUTTON INSIDE THE BOOKING FORM */
+#booking-button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto 1rem auto;
+    width: 50%;
+}
+
+/* FOR TABLETS */
+@media all and (min-width: 480px) {
+    .KF-container {
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+
+    .KF-container h3,
+    .KF-container p {
+        font-size: 1rem;
+        line-height: 2.5vh;
+    }
+
+    #KF #KF-synlighet {
+        line-height: 2.5vh;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-top: 1rem;
+    }
+
+    .KF-container img {
+        width: 90%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    #sundberg {
+        image-rendering: -webkit-optimize-contrast;
+        height: 55vh;
+    }
+
+    details[open] .KF-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #booking-form,
+    .input-field,
+    label,
+    textarea {
+        width: 97%;
+    }
+}
+
+/* FOR LAPTOPS */
+@media all and (min-width: 950px) {
+
+    #welcome-text,
+    summary {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    details {
+        margin-left: 3rem;
+    }
+
+    .page-finder ul {
+        gap: 1vw;
+        padding-left: 3.5rem;
+        margin-left: 0;
+    }
+
+    .KF-container {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    .KF-container h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .KF-container figure {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .KF-container figcaption {
+        flex: 1;
+    }
+
+    .KF-container h3,
+    .KF-container p {
+        font-size: 1rem;
+        line-height: 2.3vh;
+        margin-top: 0 !important;
+    }
+
+    #KF #KF-synlighet {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-top: 2rem;
+        line-height: 2.3vh;
+    }
+
+    .KF-container img {
+        width: 50%;
+        height: 25vh;
+    }
+
+    #sundberg {
+        height: 35vh;
+    }
+
+    #booking-form,
+    .input-field,
+    label,
+    textarea {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    label {
+        text-align: start;
+    }
+
+    .icon {
+        padding-left: 3rem;
+    }
+}
+
+/* FOR DESKTOPS */
+@media all and (min-width: 1400px) {
+
+    #welcome-text,
+    summary {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    details {
+        margin-left: 5rem;
+    }
+
+    .KF-container h3,
+    .KF-container p {
+        margin-top: 2rem;
+    }
+
+    .KF-container figure {
+        gap: 5rem;
+    }
+
+    #KF #KF-synlighet {
+        padding-left: 12rem;
+        padding-right: 12rem;
+        padding-top: 2rem;
+    }
+
+    #bibloteket {
+        height: 25vh;
+        image-rendering: -webkit-optimize-contrast;
+    }
+
+    #sundberg {
+        height: 40vh;
+    }
+
+    .KF-container img {
+        width: 30%;
+    }
+
+    #booking-form,
+    .input-field,
+    label,
+    textarea {
+        width: 75%;
+    }
+}
+
+/* FOR THE ANIMATION WHEN CLICKING A LINK */
+@keyframes flash {
+    0% {
+        color: var(--accent-color);
+    }
+
+    50% {
+        color: var(--link-color);
+    }
+
+    100% {
+        color: var(--accent-color);
+    }
+}

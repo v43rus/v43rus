@@ -1,0 +1,438 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Qwigley&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(191, 103, 53);
+    background: linear-gradient(0deg, rgba(191, 103, 53, 1) 0%, rgba(19, 29, 38, 1) 86%);
+    color: white;
+
+}
+
+/* #region NAVBAR */
+.fritids-header {
+    display: flex;
+    background: rgb(191, 103, 53);
+    background: linear-gradient(0deg, rgba(191, 104, 53, 0.687) 0%, rgb(19, 29, 38) 10%);
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-bottom: solid rgba(165, 19, 19, 0.394);
+}
+
+header nav img {
+    max-width: 130px;
+    margin: 30px;
+}
+
+.navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar a p {
+    color: rgb(229, 223, 209);
+}
+
+.navbar a p:hover {
+    transition: all .2s linear;
+    color: rgb(255, 187, 70);
+    cursor: pointer;
+
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+/* #endregion  */
+
+/* #region MAIN OCH BAKGRUND */
+main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.hero img {
+    z-index: 1;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    background-color: #ffffff2f;
+    backdrop-filter: blur(5px);
+    color: rgb(0, 0, 0);
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    border: solid 1px rgba(255, 255, 255, 0.572);
+    border-radius: 5px;
+    box-shadow:
+        -10px -10px 40px #081f3d;
+    padding: 90px 120px;
+    /* media query */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
+}
+
+.text h1 {
+    text-shadow: 1px 1px 1px wheat;
+    font-size: 3rem;
+    /* media query */
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.text p {
+
+    margin-top: 20px;
+    font-size: 1rem;
+    /* media query */
+    line-height: 1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+
+
+/* #endregion */
+
+/* #region MID SECTION */
+
+.öppentider {
+    background: rgb(191, 103, 53);
+    background: linear-gradient(0deg, rgba(191, 103, 53, 1) 0%, rgba(48, 79, 88, 1) 14%, rgba(34, 54, 73, 1) 35%, #131d26 75%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    overflow: hidden;
+    /* media query */
+
+}
+
+.öppentider ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.öppentider-container {
+    border-radius: 50px;
+    box-shadow: 20px 20px 40px #0a0f13,
+        -20px -20px 40px #1c2b39;
+    width: 330px;
+    height: min-content;
+    position: relative;
+    left: 60px;
+    /* media query */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tider {
+    padding: 10px;
+    margin-top: 70px;
+}
+
+
+.öppentider #intro-text {
+    margin: 10px 5px;
+    text-align: center;
+    padding: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* .öppentider-container:hover{
+    background-color: #844e10d4;
+    transition: 1s ease-in-out;
+} */
+
+#moon {
+    width: 40%;
+    /* media query */
+    z-index: 0;
+    position: absolute;
+    filter: drop-shadow(1px 1px 10px rgb(6, 87, 72)) invert(1%);
+    top: 120%;
+    /* media query */
+    right: 30%;
+    /* media query */
+    opacity: .2;
+}
+
+
+/* #endregion */
+
+
+/* #region Last part */
+
+.services {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    background-image: linear-gradient(0deg, #131d26 0%, rgba(34, 54, 73, 1)14%, rgba(48, 79, 88, 1) 35%, rgba(191, 103, 53, 1) 75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.utrustning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex-margin {
+    margin: 100px 10px;
+}
+
+.utrustning ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.utrustning ul li {
+    list-style: none;
+}
+
+.fritid-list {
+    margin-left: 20px;
+}
+
+.fritid-list img {
+    max-width: clamp(170px, 30vw, 260px);
+    margin: 10px 30px;
+    box-shadow:
+        5px 5px 10px rgb(0, 0, 0);
+}
+
+.outro {
+    height: 90px;
+    text-align: center;
+    background-color: #131d26;
+    margin: 0 auto;
+}
+
+.outro :first-child {
+    padding: 10px 0;
+}
+
+.outro :last-child {
+    padding-top: -20px;
+}
+
+/* #endregion footer */
+#footer-fri {
+    height: 40px;
+    text-align: center;
+    word-spacing: 5px;
+    margin: 5px;
+}
+
+
+/* #region ny utrustnings section */
+
+#mobile-down {
+    display: none;
+}
+
+#down {
+    display: block;
+}
+
+.flex-services {
+    background-image: linear-gradient(0deg, #131d26 0%, rgba(34, 54, 73, 1)14%, rgba(48, 79, 88, 1) 35%, rgba(191, 103, 53, 1) 75%);
+    display: flex;
+    padding-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    display: none;
+}
+
+.flex-utrustning {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    /* align-content: center; */
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+}
+
+.flex-utrustning article img {
+    max-width: 70%;
+}
+
+.utrustning-flöde {
+    height: 300px;
+}
+
+@media screen and (max-width: 1400px) {
+
+    /* #region HERO SECTION */
+    #mobile-down {
+        display: block;
+    }
+
+    #down {
+        display: none;
+    }
+
+    .öppentider {
+        padding-top: 70px;
+    }
+
+    /* #endregion  */
+
+    /* #region MID SECTION */
+    /* #endregion */
+
+    /* #region LAST SECTION */
+
+    .flex-services {
+        display: block;
+        background-image: linear-gradient(0deg, #131d26 0%, rgba(34, 54, 73, 1)14%, rgba(48, 79, 88, 1) 35%, rgba(191, 103, 53, 1) 75%);
+        display: flex;
+        padding-top: 150px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .services {
+        display: none;
+        overflow-x: scroll;
+        align-items: start;
+        padding-left: 20px;
+    }
+
+    #scroll {
+        display: block;
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+
+    .utrustning {
+        display: none;
+        align-items: start;
+        margin-bottom: 70px;
+    }
+
+    /* #endregion */
+}
+
+@media screen and (max-width: 900px) {
+    /* #region HERO SECTION */
+
+    .text {
+        padding: 70px 20px;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    /* #endregion */
+
+
+    /* #region MID SECTION */
+    .öppentider {
+    }
+
+    /* #endregion */
+
+
+
+    /* #region LAST SECTION */
+
+    /* #endregion */
+}
+
+@media screen and (max-width: 650px) {
+    /* #region HERO SECTION */
+
+
+
+    .text p {
+        font-size: 0.9rem;
+    }
+
+    /* #endregion */
+
+    /* #region MID SECTION */
+    .öppentider {
+        gap: 70px;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #tider ul li p , #tider ul li h3{
+        font-size: 0.9rem;
+    }
+
+    .öppentider-container {
+        top: 10px;
+        left: 5%;
+    }
+
+    /* #endregion */
+
+    /* #region LAST SECTION */
+
+    /* #endregion */
+}

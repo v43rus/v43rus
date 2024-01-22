@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sök jobbet som bibliotekarie idag i In-Codenito kommun">
+    <!-- Defines meta description of page -->
+    <meta name="keywords" content="Bibliotekarie, lediga jobb"> <!-- Defines meta keywords of page -->
+    <meta name="author" content="In-Codenito"> <!-- Defines the author of page -->
+    <link rel="icon" type="image/ico" href="Images/favicon.ico" sizes="16x16">
+    <title>Biblotekarie - Incodenito Kommun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerTopContainer">
+            <a id="logoLink" href="index.html"><img alt="Logo" id="logo" src="Images/logotype.png"></a>
+            <div id="searchBar">
+                <input type="text" placeholder="Sök...">
+                <a href=""><img alt="Sök" class="inlineIcon" src="icons/searchicon.png"></a>
+            </div>
+        </div>
+
+        <nav>
+            <a href=" ledigajobb.html">Lediga Jobb</a>
+            <a href="naringsliv.html">Näringsliv</a>
+            <a href="kulturochfritid.html">Kultur &amp; Fritid</a>
+            <a href="barnochutbildning.html">Barn &amp; Utbildning</a>
+            <a href="kommunochpolitik.html">Kommun &amp; Politik</a>
+            <a id="lyssnaLink" class="inlineImgLink" href=""><img class="inlineIcon" alt="Lyssna" id="earIcon"
+                    src="icons/earicon.png">Lyssna</a>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="navOverview">
+            <ul>
+                <li class="inlineImgLink"><img class="inlineIcon" src="icons/homeicon.png" alt="hem-icon"><a
+                        href="index.html">Startsida</a></li>
+                <li>/</li>
+                <li><a href="ledigajobb.html">Lediga jobb</a></li>
+                <li>/</li>
+                <li>Biblotekarie</li>
+            </ul>
+        </nav>
+
+        <div id="job-info-flex-container"> <!--Flex container for the content parts of the page-->
+            <article id="job-article"> <!--Information about the job-->
+                <img src="Images/ledigajobb-biblotekarie.jpg" alt="En biblotekarie i tjänst">
+                <h1>Vi söker en biblotekarie</h1>
+                <p>
+                    Vi söker en passionerad och kompetent bibliotekarie för att leda och stödja
+                    vår biblioteksverksamhet. Som bibliotekarie kommer du att vara en nyckelperson
+                    i att främja läsning, kultur och kunskap i kommunen och skapa en givande
+                    biblioteksupplevelse för besökarna.
+                </P>
+                <P>
+                    Dina arbetsuppgifter kommer bland annat vara att:
+                <ul class="job-article-list">
+                    <li>Katalogisera, organisera och underhålla bibliotekets <br>samlingar av böcker, tidskrifter och
+                        andra material</li>
+                    <li>Assistera besökare med att hitta och låna material samt svara på deras frågor</li>
+                    <li>Utveckla och genomföra biblioteksprogram och evenemang</li>
+                </ul>
+                </p>
+            </article>
+
+            <aside id="job-qualifications"> <!--Qualifications listed-->
+                <h2>Kvalifikationer</h2>
+                <h3>Utbildning & efarenhet:</h3>
+                <ul class="job-article-list">
+                    <li>En examen inom biblioteks- eller <br>informationsvetenskap</li>
+                    <li>Kunskap om bibliotekssystem och <br>katalogisering</li>
+                </ul>
+                <h3>Personliga egenskaper:</h3>
+                <ul class="job-article-list">
+                    <li>Förmåga att organisera och planera <br>bibliotekets verksamhet</li>
+                    <li>Kreativitet och engagemang för att främja <br>läsning och bibliotekets tjänster</li>
+                    <li>God kommunikationsförmåga och <br>kundservicefärdigheter</li>
+                </ul>
+            </aside>
+        </div>
+
+        <a href="ledigajobb.html#application-form" class="job-button"><b class="text-in-job-button">ANSÖK NU</b></a>
+        <br>
+
+    </main>
+
+
+    <footer>
+        <div>
+            <p class="footerHeading">Kontakt</p>
+            <ul>
+                <li class="footerSubHeading">Postaddress</li>
+                <li>Incodenito Kommun</li>
+                <li>103 16 Incodenito</li>
+            </ul>
+            <ul>
+                <li>Organisationsnummer:</li>
+                <li>212 000-4444</li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Ring" src="icons/phoneicon.png"><a
+                        class="footerLinks" href="tel:XXXXXXXXXX">+46789456123</a></li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Maila" src="icons/mailicon.png"> <a
+                        class="footerLinks" href="mailto:system@incodenitokommun.se">Skicka
+                        mejl</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <p class="footerHeading">Sociala Medier</p>
+                </li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Facebook"
+                            src="icons/facebookicon.png">Facebook</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Instagram"
+                            src="icons/instagramicon.png">Instagram</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="LinkedIn"
+                            src="icons/linkedinicon.png">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <!--Skrolla upp till toppen knapp-->
+        <button type="button" onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!---->
+    </footer>
+</body>

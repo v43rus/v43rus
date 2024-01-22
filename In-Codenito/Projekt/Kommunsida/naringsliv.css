@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #CBBD98;
+    --secondary-color: #8B8852;
+    --accent-color: #A44040;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+}
+
+.mainNaringsliv{
+    width: 100%;
+}
+
+.naringslivwrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titelNaringsliv{
+    width: 100%;
+    text-align: center;
+}
+
+#infoNaringsliv{
+    /*margin: 10px;*/
+    width: 80%;
+    margin: auto;
+}
+
+#formNaringsliv{
+    display: flex;  
+    margin: auto;                     
+}
+
+#formForEvents{
+    padding-right: 50px;
+}
+
+/*--------------------Dropdownrutorna med företagsinfo--------------------*/
+details summary {           /*Rubrikerna i företag dropdown ska ha en muspekare on hover*/
+    cursor: pointer;
+}
+
+summary::marker {
+    color: #A44040;
+}
+
+.foretag{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.foretagTitel{          /*Titeln ska centreras*/
+    text-align: center;
+}
+
+.summaryTitle{
+    /*background-color: #8B8852;
+    color: #FFFFFF;*/
+    border: 3px solid #A44040;
+    border-radius: 10px;
+    width: 30%;
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.detailsBox{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#startup{
+    margin-right: auto;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#utveckla{
+    margin: auto;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+#etablera{
+    margin-left: auto;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.imgForetag{
+    width: 480px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+/*-------------------------------------------------------------------------*/
+
+/*---------------Formulärens styling---------------------------------------*/
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size:1em;
+  cursor: pointer;
+  width: 180px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  max-width: 680px;
+  top: 50%;                 /*Formuläret ska vara i mitten av skärmen*/
+  right: 0;                 /*hela tiden*/
+  left: 0;
+  margin: 0 auto;
+  border: 3px solid #f1f1f1;
+  transform: translateY(-50%);
+  z-index: 2;                   /*och ligga ovanpå andra element*/
+  /*box-shadow: 0 10px 20px 20px #ccc;*/
+}
+
+.form-container {
+  background-color: white;
+  height: 400px;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.form-container input[type=text], .form-container input[type=number], .form-container[select] {
+  width: 96%;
+  padding: 4px;
+  margin: 5px 0 12px 0;
+  /*border: none;*/
+  background: #f1f1f1;
+}
+
+#mN{            /*suddig bakgrund som täcker hela sidan men inte formuläret*/
+    display:none;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    top:0;
+    left:0;
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+/*-------------------------------------------------------------------------*/
+
+@media screen and (max-width: 800px){   /*Layout for små skärmar*/
+    .imgForetag{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .imgForetagWrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 2000px){   /*Layout för stora skärmar*/
+    .mainNaringsliv{
+        width: 100%;
+    }
+}

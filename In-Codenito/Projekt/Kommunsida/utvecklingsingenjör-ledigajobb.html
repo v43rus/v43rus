@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sök jobbet som utvecklingsingenjör idag i In-Codenito kommun">
+    <!-- Defines meta description of page -->
+    <meta name="keywords" content="Utvecklingsingenjör, lediga jobb"> <!-- Defines meta keywords of page -->
+    <meta name="author" content="In-Codenito"> <!-- Defines the author of page -->
+    <link rel="icon" type="image/ico" href="Images/favicon.ico" sizes="16x16">
+    <title>Utvecklingsingenjör - Incodenito Kommun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerTopContainer">
+            <a id="logoLink" href="index.html"><img alt="Logo" id="logo" src="Images/logotype.png"></a>
+            <div id="searchBar">
+                <input type="text" placeholder="Sök...">
+                <a href=""><img alt="Sök" class="inlineIcon" src="icons/searchicon.png"></a>
+            </div>
+        </div>
+
+        <nav>
+            <a href=" ledigajobb.html">Lediga Jobb</a>
+            <a href="naringsliv.html">Näringsliv</a>
+            <a href="kulturochfritid.html">Kultur &amp; Fritid</a>
+            <a href="barnochutbildning.html">Barn &amp; Utbildning</a>
+            <a href="kommunochpolitik.html">Kommun &amp; Politik</a>
+            <a id="lyssnaLink" class="inlineImgLink" href=""><img class="inlineIcon" alt="Lyssna" id="earIcon"
+                    src="icons/earicon.png">Lyssna</a>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="navOverview">
+            <ul>
+                <li class="inlineImgLink"><img class="inlineIcon" src="icons/homeicon.png" alt="Hem"><a
+                        href="index.html">Startsida</a></li>
+                <li>/</li>
+                <li><a href="ledigajobb.html">Lediga jobb</a></li>
+                <li>/</li>
+                <li>Utvecklingsingenjör</li>
+            </ul>
+        </nav>
+
+        <div id="job-info-flex-container"> <!--Flex container for the content parts of the page-->
+            <article id="job-article"> <!--Information about the job-->
+                <img src="Images/ledigajobb-Utvecklingsingenjör.jpg" alt="En utvecklingsingenjör i tjänst">
+                <h1>Bli vår nästa utvecklingsingenjör</h1>
+                <p>
+                    Vi söker en engagerad och erfaren utvecklingsingenjör för att delta i design,
+                    utveckling och testning av våra tekniska produkter och lösningar.
+                    Som utvecklingsingenjör kommer du att vara en viktig del av vårt tekniska team
+                    och bidra till att driva innovation och framsteg för kommunen.
+                </P>
+                <P>
+                    Dina arbetsuppgifter kommer bland annat vara att:
+                <ul class="job-article-list">
+                    <li>Utföra tekniska tester och kvalitetssäkring inom kommunens ansvarsområden</li>
+                    <li>Uppdatera och underhålla befintliga produkter och tekniska system</li>
+                    <li>Delta i produktutvecklingsprojekt från koncept till färdig produkt</li>
+                </ul>
+                </p>
+            </article>
+
+            <aside id="job-qualifications"> <!--Qualifications listed-->
+                <h2>Kvalifikationer</h2>
+                <h3>Utbildning & efarenhet:</h3>
+                <ul class="job-article-list">
+                    <li>En treårig eller längre ingenjörsexamen <br>inom teknik eller relaterat område</li>
+                    <li>+1 års erfarenhet av teknisk produktutveckling <br>och projektledning</li>
+                    <li>Bred kunskap inom tekniska verktyg och <br>programvara</li>
+                </ul>
+                <h3>Personliga egenskaper:</h3>
+                <ul class="job-article-list">
+                    <li>Problemlösningsförmåga och analytiskt tänkande</li>
+                    <li>Starka kommunikationsfärdigheter och <br>samarbetsförmåga</li>
+                    <li>Förmåga att arbeta självständigt och som <br>en del av ett tekniskt team</li>
+                </ul>
+            </aside>
+        </div>
+
+        <a href="ledigajobb.html#application-form" class="job-button"><b class="text-in-job-button">ANSÖK NU</b></a>
+        <br>
+
+    </main>
+
+
+    <footer>
+        <section>
+            <p class="footerHeading">Kontakt</p>
+            <ul>
+                <li class="footerSubHeading">Postaddress</li>
+                <li>Incodenito Kommun</li>
+                <li>XXX XX Incodenito</li>
+            </ul>
+            <ul>
+                <li>Organisationsnummer:</li>
+                <li>212 000-XXXX</li>
+                <li class="footerIconLink"><img class="footerIcon" src="icons/phoneicon.png"><a class="footerLinks"
+                        href="tel:XXXXXXXXXX">+46XXXXXXXX</a></li>
+                <li class="footerIconLink"><img class="footerIcon" src="icons/mailicon.png"> <a class="footerLinks"
+                        href="mailto:system@incodenitokommun.se">Skicka
+                        mejl</a></li>
+            </ul>
+        </section>
+        <section>
+            <p class="footerHeading">Sociala Medier</p>
+            <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon"
+                        src="icons/facebookicon.png">Facebook</a></li>
+            <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon"
+                        src="icons/instagramicon.png">Instagram</a></li>
+            <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon"
+                        src="icons/linkedinicon.png">LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <!--Skrolla upp till toppen knapp-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!---->
+    </footer>
+</body>

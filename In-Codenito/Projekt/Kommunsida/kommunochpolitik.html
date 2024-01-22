@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In-Codenito Kommun och Politik"> <!-- Defines meta description of page -->
+    <meta name="keywords" content="Förvaltningar, Kontakt, Verksamheter, Styrelse">
+    <!-- Defines meta keywords of page -->
+    <meta name="author" content="In-Codenito"> <!-- Defines the author of page -->
+    <link rel="icon" type="image/ico" href="Images/favicon.ico" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <title>Kommun &amp; Politik - Incodenito Kommun</title>
+</head>
+
+<body>
+    <header>
+        <div id="headerTopContainer">
+            <a id="logoLink" href="index.html"><img alt="Logo" id="logo" src="Images/logotype.png"></a>
+            <div id="searchBar">
+                <input type="text" placeholder="Sök...">
+                <a href=""><img alt="Sök" class="inlineIcon" src="icons/searchicon.png"></a>
+            </div>
+        </div>
+
+        <nav>
+            <a href=" ledigajobb.html">Lediga Jobb</a>
+            <a href="naringsliv.html">Näringsliv</a>
+            <a href="kulturochfritid.html">Kultur &amp; Fritid</a>
+            <a href="barnochutbildning.html">Barn &amp; Utbildning</a>
+            <a href="kommunochpolitik.html">Kommun &amp; Politik</a>
+            <a id="lyssnaLink" class="inlineImgLink" href=""><img class="inlineIcon" alt="Lyssna" id="earIcon"
+                    src="icons/earicon.png">Lyssna</a>
+        </nav>
+    </header>
+
+    <main id="kommun-politik-startsida">
+
+        <nav class="navOverview">
+            <ul>
+                <li class="inlineImgLink"><img class="inlineIcon" alt="Hem" src="icons/homeicon.png"><a
+                        href="index.html">Startsida</a></li>
+                <li>/</li>
+                <li>Kommun &amp; Politik</li>
+            </ul>
+        </nav>
+
+        <!-- MAIN CONTENT FÖR KOMMUN OCH POLITIK -->
+        <section id="mainContentKP">
+            <h1>Kommun &amp; Politik</h1>
+            <div class="inlineSection screenHundred centerTextAt650 blockAt650">
+                <!-- INFO BLOCK -->
+                <aside class="screenThirty">
+                    <h4>Incodenito Kommun</h4>
+                    <p>
+                        Landskap: Östra Götaland
+                    </p>
+                    <p>
+                        Inrättad: 29 oktober 2023
+                    </p>
+                    <p>
+                        Centralort: Reftele
+                    </p>
+                    <p>
+                        Folkmängd: 375 000 (2023-10-29)
+                    </p>
+                </aside>
+                <article class="screenSeventy centerText">
+                    <h2>Kommunens Historia</h2>
+                    <p>
+                        Incodenito kommun är en relativt nystartad kommun som bildades då megakommunen Pangea
+                        splittrades upp då det kändes orimligt att en kommun var så stor. Incodenito är en fantastisk
+                        kommun med gröna fält, skimrande blått vatten och ett nattliv sällan skådat förr! En stor del av
+                        elen och energin som används i Incodenito genereras med hjälp av vind och vattenkraft.
+                        Kommunstyrelsen med Mhattias Roswall i ledningen brinner för en hållbar och realistisk framtid!
+                        Incodenito kommun har även ett av Sveriges äldsta bibliotek som kan dateras hela
+                        vägen tillbaks till 1600-talet. Stadsbiblioteket innehåller en hel del sällsynta böcker som inte
+                        kan lånas på andra ställen. Vi har även en fin <a
+                            href="../Fritidsgård/index.html">fritidsgård</a> som ger de unga en chans att hitta
+                        likasinnade och delta i en mängd olika aktiviteter tillsammans. Gratis såklart!
+                    </p>
+                </article>
+            </div>
+
+            <!-- BILDER FRÅN INCODENITO KOMMUN-->
+            <div class="inlineSection hideAt650">
+                <figure class="screenThirty figureKP">
+                    <img alt="Incodenito Kommun kvällstid" class="kommunensHistoriaImg"
+                        src="Images/kommunochpolitik/komunnenshistorianatt.jpg">
+                    <figcaption class="figCaptionKP">Incodenito Kommun kvällstid</figcaption>
+                </figure>
+                <figure class="screenThirty figureKP">
+                    <img alt="Incodenito Kommuns Hamn" class="kommunensHistoriaImg"
+                        src="Images/kommunochpolitik/komunnenshistoriahamn.jpg">
+                    <figcaption class="figCaptionKP">Incodenito Kommuns Hamn</figcaption>
+                </figure>
+                <figure class="screenThirty figureKP">
+                    <img alt="Incodenito Kommuns Landsbygd" class="kommunensHistoriaImg"
+                        src="Images/kommunochpolitik/komunnenshistoriavaderkvarn.jpg">
+                    <figcaption class="figCaptionKP">Incodenito Kommuns Landsbygd</figcaption>
+                </figure>
+            </div>
+
+            <!-- FÖRVALTNINGAR SPALT-->
+            <div class="sideBySide blockAt1024" id="forvaltningar">
+                <aside id="forvaltningarLista" class="blockAt1024">
+                    <ul>
+                        <li>
+                            <button type="button" id="omForvaltningarKnapp" onclick="changeInfo(omForvaltningar)">Om
+                                våra
+                                förvaltningar</button>
+                        </li>
+                        <li><button type="button" id="kulturFritidKnapp" onclick="changeInfo(kulturFritid)">Kultur &amp;
+                                Fritid</button>
+                        </li>
+                        <li><button type="button" id="tekniskaKontoretKnapp"
+                                onclick="changeInfo(tekniskaKontoret)">Tekniska Kontoret</button></li>
+                        <li><button type="button" id="utbildningsForvaltningenKnapp"
+                                onclick="changeInfo(utbildningsForvaltningen)">Utbildningsförvaltningen</button></li>
+                        <li><button type="button" id="socialForvaltningenKnapp"
+                                onclick="changeInfo(socialForvaltningen)">Socialförvaltningen</button></li>
+                        <li><button type="button" id="raddningsTjanstenKnapp"
+                                onclick="changeInfo(raddningsTjansten)">Räddningstjänsten</button></li>
+                        <li><button type="button" id="stadsKontoretKnapp"
+                                onclick="changeInfo(stadsKontoret)">Stadskontoret</button>
+                        </li>
+                    </ul>
+                </aside>
+                <article id="forvaltningarInfo">
+                    <script src="kommunochpolitik.js"></script>
+                    <h3 id="forvaltningsNamn">Om våra förvaltningar</h3>
+                    <h4>Organisation</h4>
+                    <p id="orgInfo">
+                        Kommunens förvaltningsorganisation är indelad i sex förvaltningar/kontor, alla med sitt
+                        speciffika verksamhetsområde. Personalen som sköter de dagliga frågorna inom kommunen är
+                        anställda i en förvaltning eller ett bolag. Du kan läsa mer om de individuella förvaltningarna
+                        eller kontakta dem med hjälp av flikarna till höger.
+                    </p>
+                    <h4>Antal anställda</h4>
+                    <p id="antalAnstallda">
+                        Totalt över alla förvaltningar är vi X anställda.
+                    </p>
+                    <h4>Kontakt</h4>
+                    <p class="inlineImgLink">
+                        <img class="inlineIcon" alt="Ring" src="icons/phoneicon.png"><span id="kontaktNamn">Växel:
+                        </span><a id="telefonNr" href="tel:4545-65400">4545&#8209;65400</a>
+                    </p>
+                </article>
+            </div>
+
+            <!-- KONTAKT FÖR VERKSAMHETER -->
+            <section class="centerColumn screenHundred">
+                <h2 class="centerText">Kontakt för Verksamheter</h2>
+                <div id="kontaktVerksamheter">
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Barnomsorg"
+                            src="Images/kommunochpolitik/verksamheter/barnomsorg.jpg">
+                        <div>
+                            <h4 class="flexLeft">Barnomsorg</h4>
+                            <p>Kontakt: Karin Nylander</p>
+                            <p>Telefontider: 07.00-15.00</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="För &amp; Grundskola"
+                            src="Images/kommunochpolitik/verksamheter/forgrundskola.jpg">
+                        <div>
+                            <h4 class="flexLeft">Förskola / Grundskola</h4>
+                            <p>Kontakt: Sigurd Svensson</p>
+                            <p>Telefontider: 07.00-15.00</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Gymnasium" src="Images/kommunochpolitik/verksamheter/gymnasium.jpg">
+                        <div>
+                            <h4 class="flexLeft">Gymnasieskola / Komvux</h4>
+                            <p>Kontakt: Ada Gustafsson</p>
+                            <p>Telefontider: 09.00-16.00</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Kulturskola"
+                            src="Images/kommunochpolitik/verksamheter/kulturskola.jpg">
+                        <div>
+                            <h4 class="flexLeft">Kulturskola</h4>
+                            <p>Kontakt: Kålle Gustafsson</p>
+                            <p>Telefontider: 12.00-14.30</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Socialtjänsten"
+                            src="Images/kommunochpolitik/verksamheter/socialtjanst.jpg">
+                        <div>
+                            <h4 class="flexLeft">Socialtjänsten</h4>
+                            <p>Kontakt: Gerd Flärd</p>
+                            <p>Telefontider: 07.00-15.00</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Äldreomsorgen"
+                            src="Images/kommunochpolitik/verksamheter/aldreomsorg.jpg">
+                        <div>
+                            <h4 class="flexLeft">Äldreomsorg</h4>
+                            <p>Kontakt: Danny DeVito</p>
+                            <p>Telefontider: 07.00-15.00</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Fastigheter"
+                            src="Images/kommunochpolitik/verksamheter/fastighet.jpg">
+                        <div>
+                            <h4 class="flexLeft">Fastigheter och Byggnader</h4>
+                            <p>Kontakt: Com Truise</p>
+                            <p>Telefontider: 09.00-16.00</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Renhållning"
+                            src="Images/kommunochpolitik/verksamheter/renhallning.jpg">
+                        <div>
+                            <h4 class="flexLeft">Renhållning</h4>
+                            <p>Kontakt: Angela DeAngelo</p>
+                            <p>Telefontider: 12.00-14.30</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Avlopp" src="Images/kommunochpolitik/verksamheter/avlopp.jpg">
+                        <div>
+                            <h4 class="flexLeft">Avlopp</h4>
+                            <p>Kontakt: Christer Molander</p>
+                            <p>Telefontider: 07.00-15.00</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Energi" src="Images/kommunochpolitik/verksamheter/energi.jpg">
+                        <div>
+                            <h4 class="flexLeft">Energiförsörjning</h4>
+                            <p>Kontakt: Blixten McQueen</p>
+                            <p>Telefontider: 07.00-15.00</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Dricksvatten"
+                            src="Images/kommunochpolitik/verksamheter/dricksvatten.jpg">
+                        <div>
+                            <h4 class="flexLeft">Dricksvatten</h4>
+                            <p>Kontakt: Per Moberg</p>
+                            <p>Telefontider: 09.00-16.00</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                    <article class="verksamhet">
+                        <img class="hideAt650" alt="Sjukvård" src="Images/kommunochpolitik/verksamheter/sjukvard.jpg">
+                        <div>
+                            <h4 class="flexLeft">Hälso &amp; Sjukvård</h4>
+                            <p>Kontakt: Gert Carlsson</p>
+                            <p>Telefontider: 12.00-14.30</p>
+                            <p>Tel: +46XXXXXXXXX</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- KOMMUNSTYRELSEN SPALT -->
+            <!-- FÖR ATT LÄGGA TILL YTTERLIGARE INFORMATION KOPIERA EN AV ARTIKLARNA -->
+            <section class="screenSeventy centerColumn">
+                <h2 class="centerText">Vi i Kommunstyrelsen</h2>
+                <div class="screenHundred">
+                    <article class="kommunStyrelsen">
+                        <img class="circularSquare" alt="Mhattias Roswall"
+                            src="Images/kommunochpolitik/kommunstyrelsen/mhattias.jpg">
+                        <div>
+                            <p>Mhattias Roswall</p>
+                            <p>Uppdrag:</p>
+                            <p>Vice Ordförande</p>
+                        </div>
+                    </article>
+                    <article class="kommunStyrelsen">
+                        <img class="circularSquare" alt="Genard Laha"
+                            src="Images/kommunochpolitik/kommunstyrelsen/genard.jpg">
+                        <div>
+                            <p>Genard Laha</p>
+                            <p>Uppdrag:</p>
+                            <p>Ledamot</p>
+                        </div>
+                    </article>
+                    <article class="kommunStyrelsen">
+                        <img class="circularSquare" alt="Ryan Gosling"
+                            src="Images/kommunochpolitik/kommunstyrelsen/ryan.jpg">
+                        <div>
+                            <p>Ryan Gosling</p>
+                            <p>Uppdrag:</p>
+                            <p>Ledamot</p>
+                        </div>
+                    </article>
+                    <article class="kommunStyrelsen">
+                        <img class="circularSquare" alt="Borat" src="Images/kommunochpolitik/kommunstyrelsen/borat.jpg">
+                        <div>
+                            <p>Borat</p>
+                            <p>Uppdrag:</p>
+                            <p>Ersättare</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <footer>
+        <div>
+            <p class="footerHeading">Kontakt</p>
+            <ul>
+                <li class="footerSubHeading">Postaddress</li>
+                <li>Incodenito Kommun</li>
+                <li>103 16 Incodenito</li>
+            </ul>
+            <ul>
+                <li>Organisationsnummer:</li>
+                <li>212 000-4444</li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Ring" src="icons/phoneicon.png"><a
+                        class="footerLinks" href="tel:XXXXXXXXXX">+46789456123</a></li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Maila" src="icons/mailicon.png"> <a
+                        class="footerLinks" href="mailto:system@incodenitokommun.se">Skicka
+                        mejl</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <p class="footerHeading">Sociala Medier</p>
+                </li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Facebook"
+                            src="icons/facebookicon.png">Facebook</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Instagram"
+                            src="icons/instagramicon.png">Instagram</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="LinkedIn"
+                            src="icons/linkedinicon.png">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <!--Skrolla upp till toppen knapp-->
+        <button type="button" onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!---->
+    </footer>
+</body>
+
+</html>

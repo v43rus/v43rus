@@ -1,0 +1,721 @@
+/* Root Variables */
+:root {
+    scroll-behavior: smooth;
+    --text-color: rgb(25, 3, 0);
+    --background-color: rgb(255, 246, 245);
+    --primary-color: rgb(1, 123, 142);
+    --secondary-color: rgb(194, 216, 255);
+    --accent-color: rgb(1, 244, 155);
+    --primary-opacity: rgba(1, 123, 142, 0.8);
+}
+
+/* Text Selection */
+::selection {
+    background-color: var(--accent-color);
+}
+
+/* Body Styles */
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    border-bottom: 5px solid var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 21vh;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 2px -2px var(--primary-opacity);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: .8vw;
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-underline-offset: .4vh;
+    text-decoration-color: var(--accent-color);
+}
+
+/* Toolbar Styles */
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1vw;
+    height: 4vh;
+    padding: 0 2vw 0 0;
+    font-family: Rajdhani;
+    list-style: none;
+    margin: 0;
+}
+
+.toolbar li {
+    padding-right: .5vw;
+}
+
+.toolbar i {
+    padding-right: .3vw;
+    color: var(--accent-color);
+}
+
+.toolbar-phone {
+    display: none;
+    text-align: center;
+    position: relative;
+    font-family: Rajdhani;
+}
+
+.toolbar-phone i {
+    color: var(--accent-color);
+}
+
+.toolbar-phone summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 5vw;
+}
+
+.toolbar-phone[open] summary {
+    text-decoration: underline;
+    text-underline-offset: 0.5vh;
+    text-decoration-color: var(--accent-color);
+    padding-bottom: 1vh;
+    font-weight: 1000;
+}
+
+.toolbar-phone ul {
+    list-style: none;
+    background-color: var(--background-color);
+    text-align: start;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 4px solid var(--primary-color);
+    position: absolute;
+    top: 50%;
+}
+
+.toolbar-phone a {
+    font-size: 4vw;
+}
+
+.toolbar-phone .opened {
+    display: none;
+    font-size: 5vw;
+}
+
+.toolbar-phone[open] .opened  {
+    display: inline-block;
+}
+
+.toolbar-phone[open] .closed  {
+    display: none;
+}
+
+.toolbar-phone li {
+    padding-left: 12.5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 37.5%;
+}
+
+.toolbar-phone li:nth-child(1), .toolbar-phone li:nth-child(5), .toolbar-phone li:nth-child(2), .toolbar-phone li:nth-child(6) {
+    background-color: #e9e9e9;
+}
+
+/* Scroll Anchors */
+#scroll1, #scroll2, #scroll3, #scroll4, #scroll5, #scroll6, #scroll7 {
+    scroll-margin-top: 30vh;
+}
+
+/* Logo Styles */
+.logobar {
+    width: 100%;
+    height: 10vh;
+    padding: 0;
+}
+
+.logofigure {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 5vh;
+    margin-top: 0;
+}
+
+.logo {
+    width: 14vw;
+    height: auto;
+}
+
+/* Searchbar Styles */
+.searchbar {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    margin-top: -20vh;
+    margin-left: 4vw;
+}
+
+/* Form Styles */
+.searchbar form {
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.searchbar button {
+    height: 4.5vh;
+    border: none;
+    cursor: pointer;
+    font-size: 1vw;
+    background-color: var(--background-color);
+}
+
+/* Input Styles */
+.searchbar input[type=text] {
+    border: none;
+    border-left: none;
+    padding: .8vh 0 .8vh .8vw;
+    font-size: 1vw;
+    width: 9vw;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: Rajdhani;
+}
+
+/* Placeholder Styles */
+.searchbar input[type=text]::placeholder {
+    color: var(--text-color);
+}
+
+/* Focus Styles */
+.searchbar input[type=text]:focus {
+    outline: 0;
+}
+
+/* Focus Placeholder Styles */
+.searchbar input[type=text]:focus::placeholder {
+    color: transparent;
+}
+
+/* Header Bar Styles */
+#headerbar {
+    text-align: center;
+    font-size: 1.3vw;
+    height: 5vh;
+    line-height: 4vh;
+    position: relative;
+    margin: 0;
+    margin-left: -3.5vw;
+    padding-top: 21vh;
+    background-color: var(--primary-opacity);
+}
+
+/* Header Bar Text Styles */
+#headerbar p {
+    margin: 0;
+    padding: 0;
+    color: var(--background-color);
+    font-family: Hind Siliguri;
+}
+
+/* Home Section Styles */
+#homebackground {
+    margin: 0;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-bottom: 10px solid var(--primary-color);
+}
+
+#hometextcontainer {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3vh 0 3vh 0;
+    border-radius: 10px;
+    background-color: var(--primary-opacity);
+}
+
+#homeheading {
+    margin: 0;
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 2vh;
+    color: var(--background-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Outfit;
+}
+
+/* Home Text Container Styles */
+#hometext {
+    font-size: 1.1vw;
+    margin: 10px 0;
+    line-height: 3vh;
+    word-spacing: .2vw;
+    letter-spacing: .1vw;
+    padding: 0 2vw 0 2vw;
+    color: var(--background-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Hind Siliguri;
+}
+
+/* Register Background Styles */
+#registerbackground {
+    margin: 20vh 0 0 0;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-bottom: 10px solid var(--primary-color);
+}
+
+/* Register Text Container Styles */
+#registertextcontainer {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3vh 0 3vh 0;
+    border-radius: 10px;
+    background-color: var(--primary-opacity);
+}
+
+/* Register Heading Styles */
+#registerheading {
+    margin: 0;
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 2vh;
+    color: var(--background-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Outfit;
+}
+
+/* Register Text Styles */
+#registertext {
+    font-size: 1.1vw;
+    margin: 10px 0;
+    line-height: 3vh;
+    word-spacing: .2vw;
+    letter-spacing: .1vw;
+    padding: 0 2vw 0 2vw;
+    color: var(--background-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Hind Siliguri;
+}
+
+/* Navigation Map Styles */
+.navmap {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 2vh 0 0 10vw;
+    color: var(--text-color);
+    font-size: 1vw;
+    font-family: Hind Siliguri;
+}
+
+/* Navigation Route Styles */
+.navroute a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navroute a:hover {
+    text-decoration: underline;
+}
+
+/* Last Navigation Route Styles */
+.lastnavroute a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.lastnavroute a:hover {
+    text-decoration: underline;
+}
+
+/* Register Main Styles */
+#registermain {
+    background-color: var(--background-color);
+    margin-bottom: 5vh;
+}
+
+/* Register Container for Message*/
+.registerlistmessage {
+    margin: 0 auto;
+    width: 50%;
+    border: 5px solid var(--primary-opacity);
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    font-family: Hind Siliguri;
+}
+
+.registerlistmessage h2 {
+    padding: 5vh 7.5vw 0 7.5vw;
+    font-size: 1.2vw;
+    line-height: 3vh;
+}
+
+.registerlistmessage p {
+    padding: 2vh 7.5vw;
+    font-size: 1.2vw;
+    line-height: 3vh;
+}
+
+.registerlistmessage a {
+    color: var(--text-color);
+    text-decoration-color: var(--text-color);
+    text-underline-offset: .8vh;
+}
+
+.registerlistmessage a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+}
+
+
+
+/* Register List Container Styles */
+.registerlistcontainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.registerlistcontainer {
+    margin: 0 auto;
+    width: 50%;
+    border: 5px solid var(--primary-opacity);
+    border-radius: 10px;
+    margin-bottom: 10vh;
+}
+
+.registerlistcontainer li {
+    border-top: 1px solid var(--primary-opacity);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1.5vh 3vw 1.5vh 3vw;
+    font-size: 1.1vw;
+    font-family: Hind Siliguri;
+}
+
+/* Register List Summary Styles */
+.registerlistcontainer summary {
+    padding-left: 1vw;
+    cursor: pointer;
+}
+
+/* Register List Headings Styles */
+.registerlistcontainer h1 {
+    margin: 1.5vh 0 1.5vh 0;
+    font-size: 2vw;
+    font-family: Outfit;
+    padding-left: 2vw;
+}
+
+.registerlistcontainer h2 {
+    margin: 0 -3vw 0 -3vw!important;
+    text-align: center;
+    padding: 4vh 0 1.5vh 0;
+    font-size: 1.7vw;
+    font-family: Outfit;
+    border-top: 1px solid var(--primary-opacity);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Register List Link Styles */
+.registerlistcontainer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.registerlistcontainer a:hover {
+    text-decoration: underline;
+    text-underline-offset: .5vh;
+    text-decoration-color: var(--secondary-color);
+}
+
+/* Register Content Input Styles */
+.register-content input[type=text] {
+    padding: 1vh 1vw;
+    width: 92%;
+    display: block;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--background-color);
+    font-family: Hind Siliguri;
+    margin: 2vh 0;
+    color: var(--text-color);
+    border-radius: 10px;
+    font-size: 1vw;
+}
+
+.register-content input[type=text]:focus {
+    border: 2px solid var(--primary-color);
+    outline: 0;
+}
+
+/* Register Button Styles */
+.registerbtn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 1.5vh 0;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    opacity: .9;
+    font-family: Outfit;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+    font-size: 1.2vw;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Info Container Styles (Continued) */
+#infocontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    gap: 2vw;
+    width: 100%;
+}
+
+#infocontainer h4 {
+    position: absolute;
+    margin-top: -6vh;
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 1.2vw;
+    font-family: Outfit;
+}
+
+#infocontainer figure {
+    width: 30vw;
+    border: 10px solid var(--primary-color);
+    outline: 20px solid var(--primary-opacity);
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    margin-top: 6vh;
+}
+
+#infocontainer img {
+    width: 30vw;
+    height: 40vh;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+#infocontainer figcaption {
+    margin: 0;
+    margin-top: -.7vh;
+    width: 30vw;
+    height: 115vh;
+}
+
+#infocontainer h2 {
+    text-align: center;
+    margin: 0;
+    padding: 2.5vh 0 0 0;
+    color: var(--text-color);
+    font-size: 1.65vw;
+    font-family: Outfit;
+}
+
+#infocontainer h3 {
+    padding: 1.5vh 1.5vw 0 2vw;
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1.3vw;
+    font-family: Outfit;
+}
+
+#infocontainer p {
+    padding: 1.5vh 1.5vw 0 2vw;
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1.1vw;
+    font-family: Hind Siliguri;
+    line-height: 2.5vh;
+}
+
+#infocontainer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Info Container Styles (Continued) */
+#infocontainer a:hover {
+    text-decoration: underline;
+    text-underline-offset: .8vh;
+}
+
+#slogan {
+    margin: auto;
+    display: block;
+    margin-top: 5vh;
+    width: 20vw!important;
+    height: auto !important;
+}
+
+#tripadvisor {
+    margin: auto;
+    display: block;
+    margin-top: 5vh;
+    width: 25vw!important;
+    height: auto !important;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+}
+
+.footercontainer {
+    border-top: 2px solid var(--secondary-color);
+    padding-bottom: 1vh;
+}
+
+.footercontainer a {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.footercontainer a:hover {
+    text-decoration: underline;
+    text-underline-offset: .4vh;
+    text-decoration-color: var(--secondary-color);
+}
+
+.footerlist {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerlist li {
+    text-align: center;
+    color: var(--background-color);
+    font-style: normal;
+    font-size: 1.2vw;
+    font-family: Hind Siliguri;
+    line-height: 1.5vh;
+    padding: .7vh 0 .7vh 0;
+}
+
+.footerlist h2 {
+    text-align: center;
+    font-size: 2.2vw;
+    color: var(--background-color);
+    font-family: Outfit;
+}
+
+.footerlist address {
+    font-style: normal;
+}
+
+.footercontainerhr {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: var(--background-color);
+    position: absolute;
+    width: 60%;
+    height: 2px;
+}
+
+.hourscontainer {
+    padding: 1vh 0 1vh 0;
+}
+
+.hourscontainer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 11vw;
+}
+
+.hourscontainer li {
+    padding: .5vh 0 .8vh 0;
+    color: var(--background-color);
+    font-size: 1.1vw;
+    font-family: Hind Siliguri;
+    line-height: 1.5vh;
+    text-align: center;
+}
+
+.hourscontainer h3 {
+    padding: 2vh 0 .8vh 0;
+    margin: 0 0 2vh 0;
+    color: var(--background-color);
+    font-size: 1.4vw;
+    font-family: Outfit;
+}
+
+.hourscontainerhr {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: var(--background-color);
+    position: absolute;
+    width: 80%;
+    height: 2px;
+}
+
+.footerlogos {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    text-align: center;
+}
+
+.footerlogo, .footerslogan {
+    width: 20vw;
+    height: auto;
+}
+
+.footericons {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    padding: 5vh 0 2.5vh 0;
+}
+
+.footericons a {
+    color: var(--background-color);
+}
+
+.footericons a:hover {
+    color: var(--secondary-color);
+}
+
+.footericons i {
+    font-size: 3.5vw;
+}

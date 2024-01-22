@@ -1,0 +1,370 @@
+/* For phones, See style.css for explanations */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    .navbar {
+        height: 5vh;
+        padding-top: 3vh;
+    }
+    .toolbar {
+        display: none;
+    }
+    .toolbar-phone {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    .searchbar {
+        display: none;
+    }
+    .searchbar button {
+        font-size: 4.5vw;
+    }
+    .searchbar input[type=text] {
+        font-size: 5vw;
+        width: 25vw;
+    }
+    #headerbar {
+        display: none;
+    }
+    #homebackground,
+    #registerbackground {
+        border-bottom: 5px solid var(--primary-color);
+        margin: 8.7vh 0 0 0;
+    }
+    #hometextcontainer,
+    #registertextcontainer {
+        width: 80%;
+        top: 48.5%;
+    }
+    #homeheading,
+    #registerheading {
+        font-size: 6vw;
+        padding-bottom: 0;
+    }
+    #hometext,
+    #registertext {
+        font-size: 4.5vw;
+        margin: 0 5vw 0 5vw;
+        line-height: 3.5vh;
+    }
+    .navmap {
+        font-size: 5vw;
+        padding: 0 0 0 7.5vw;
+    }
+    #infocontainer h4 {
+        display: none;
+    }
+    #infocontainer {
+        gap: 0;
+        margin-top: 3vh;
+        flex-direction: column;
+    }
+    #infocontainer figure {
+        border: 5px solid var(--primary-color);
+        outline: 7px solid var(--primary-opacity);
+        width: 70%;
+        margin-bottom: 5vh;
+    }
+    #infocontainer img {
+        width: 100%;
+        height: 30vh;
+    }
+    #infocontainer figcaption {
+        height: fit-content;
+        width: 90%;
+        margin-bottom: 10vh;
+    }
+    #infocontainer h2 {
+        font-size: 6vw;
+        white-space: nowrap;
+    }
+    #infocontainer p {
+        font-size: 5vw;
+        padding-left: 3vw;
+        line-height: 3.5vh;
+    }
+    #infocontainer h3 {
+        font-size: 5.5vw;
+        white-space: nowrap;
+    }
+    #infocontainer a {
+        text-align: center;
+        display: block;
+        padding: 5vh 0 0 0;
+    }
+    #infocontainer a:hover {
+        text-underline-offset: 0.25vh;
+    }
+    #remove,
+    #slogan,
+    #tripadvisor {
+        display: none;
+    }
+    .registerlistmessage {
+        width: 70%;
+    }
+    .registerlistmessage h2 {
+        font-size: 4.5vw;
+        line-height: 2.8vh;
+    }
+    .registerlistmessage p {
+        font-size: 4vw;
+        line-height: 2.8vh;
+    }
+    .registerlistcontainer {
+        width: 70%;
+    }
+    .registerlistcontainer li {
+        font-size: 5vw;
+        padding: 1.2vh 1vw 1.2vh 1vw;
+        line-height: 3.5vh;
+    }
+    .registerlistcontainer h1 {
+        font-size: 6vw;
+        margin: 1vh 0 1vh 0;
+    }
+    .registerlistcontainer h2 {
+        font-size: 5vw;
+    }
+    .register-content input[type=text] {
+        font-size: 3vw;
+    }
+    .registerbtn {
+        font-size: 4vw;
+    }
+    .footerlist li {
+        font-size: 7vw;
+        line-height: 4.5vh;
+    }
+    .footerlist h2 {
+        font-size: 8vw;
+    }
+    .hourscontainer ul {
+        gap: 0;
+    }
+    .hourscontainer li {
+        font-size: 5vw;
+        line-height: 3vh;
+    }
+    .hourscontainer h3 {
+        font-size: 7vw;
+    }
+    .footerlogo,
+    .footerslogan,
+    .hourscontainerhr {
+        display: none;
+    }
+    .footericons i {
+        font-size: 10vw;
+    }
+    .footerlist,
+    .hourscontainer ul {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* For Tablets, See style.css for explanations */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    .navbar a {
+        font-size: 1.7vw;
+    }
+    .logo {
+        width: 30vw;
+    }
+    .searchbar button {
+        font-size: 2.1vw;
+    }
+    .searchbar input[type=text] {
+        font-size: 2.1vw;
+        width: 15vw;
+    }
+    #headerbar {
+        font-size: 2vw;
+        line-height: 4.5vh;
+    }
+    #hometextcontainer,
+    #registertextcontainer {
+        width: 80%;
+    }
+    #homeheading,
+    #registerheading {
+        font-size: 3.5vw;
+        padding-bottom: 0;
+    }
+    #hometext,
+    #registertext {
+        font-size: 2.7vw;
+        padding: 0 5vw 0 5vw;
+    }
+    .navmap {
+        font-size: 2.3vw;
+        padding: 0 0 0 10vw;
+    }
+    #infocontainer h4 {
+        font-size: 2.3vw;
+        margin-top: -1.5vh;
+    }
+    #infocontainer {
+        margin-top: 3vh;
+        gap: 0;
+    }
+    #infocontainer figure {
+        border: 5px solid var(--primary-color);
+        outline: 7px solid var(--primary-opacity);
+        width: 70%;
+        margin-bottom: 5vh;
+    }
+    #infocontainer img {
+        width: 100%;
+        height: 25vh;
+    }
+    #infocontainer figcaption {
+        height: 105vh;
+    }
+    #infocontainer h2 {
+        font-size: 2.7vw;
+    }
+    #infocontainer h3 {
+        font-size: 2.2vw;
+    }
+    #infocontainer p {
+        font-size: 1.8vw;
+    }
+    #remove,
+    #tripadvisor {
+        display: none;
+    }
+    #slogan {
+        width: 25vw!important;
+        height: auto !important;
+        margin-top: 2vh;
+    }
+    .registerlistmessage {
+        width: 60%;
+    }
+    .registerlistmessage h2 {
+        font-size: 3vw;
+        line-height: 2.5vh;
+    }
+    .registerlistmessage p {
+        font-size: 2.5vw;
+        line-height: 2.5vh;
+    }
+    .registerlistcontainer li {
+        font-size: 1.9vw;
+    }
+    .registerlistcontainer h2 {
+        font-size: 2.5vw;
+        margin: 1vh 0 1vh 0;
+    }
+    .registerbtn {
+        font-size: 2.4vw;
+    }
+    .footerlist li {
+        font-size: 2.4vw;
+    }
+    .footerlist h2 {
+        font-size: 4.3vw;
+    }
+    .hourscontainer ul {
+        gap: 3vw;
+    }
+    .hourscontainer li {
+        font-size: 2.1vw;
+    }
+    .hourscontainer h3 {
+        font-size: 3.4vw;
+    }
+    .footerlogo,
+    .footerslogan {
+        width: 35vw;
+    }
+    .footericons i {
+        font-size: 5vw;
+    }
+}
+
+/* For Laptops, see style.css for explanations */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    .navbar a {
+        font-size: 1.5vw;
+    }
+    .logo {
+        width: 20vw;
+    }
+    .searchbar button {
+        font-size: 1.7vw;
+    }
+    .searchbar input[type=text] {
+        width: 11vw;
+        font-size: 1.7vw;
+    }
+    #headerbar {
+        font-size: 1.5vw;
+        line-height: 4.5vh;
+    }
+    #hometextcontainer,
+    #registertextcontainer {
+        width: 60%;
+    }
+    #homeheading,
+    #registerheading {
+        font-size: 2.7vw;
+        padding-bottom: 0;
+    }
+    #hometext,
+    #registertext {
+        font-size: 2vw;
+        padding: 0 5vw 0 5vw;
+    }
+    .navmap {
+        font-size: 2vw;
+        padding: 0 0 0 10vw;
+    }
+    #infocontainer h4 {
+        font-size: 2vw;
+        margin-top: -3vh;
+    }
+    #infocontainer {
+        margin-top: 5vh;
+    }
+    #infocontainer h2 {
+        font-size: 2.3vw;
+    }
+    #infocontainer h3 {
+        font-size: 1.9vw;
+    }
+    #infocontainer p {
+        font-size: 1.6vw;
+    }
+    #tripadvisor {
+        display: none;
+    }
+    .registerlistcontainer li {
+        font-size: 1.5vw;
+    }
+    .registerlistcontainer h2 {
+        font-size: 2vw;
+        margin: 1vh 0 1vh 0;
+    }
+    .registerbtn {
+        font-size: 2vw;
+    }
+    .footerlist li {
+        font-size: 1.8vw;
+    }
+    .footerlist h2 {
+        font-size: 3.7vw;
+    }
+    .hourscontainer li {
+        font-size: 1.8vw;
+    }
+    .hourscontainer h3 {
+        font-size: 2vw;
+    }
+    .footerlogo,
+    .footerslogan {
+        width: 35vw;
+    }
+}
